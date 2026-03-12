@@ -6,20 +6,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 
 <style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
+
+body{
+font-family: "Poppins", sans-serif;
+background-color:#ffe6f0;
 }
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/plakats.png");
-  min-height: 70%;
+.pink-bar{
+background-color:#ff66b2;
+color:white;
 }
+
+.section-title{
+color:#cc0066;
+}
+
+header{
+padding-top:100px;
+padding-bottom:40px;
+text-align:center;
+}
+
+h1{
+font-weight:600;
+color:#cc0066;
+}
+
 </style>
 
 </head>
@@ -28,124 +44,81 @@ body, html {
 
 <!-- Menu -->
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+<div class="w3-row w3-padding pink-bar">
 
-    <div class="w3-col s2">
-      <a href="#gimp" class="w3-button w3-block w3-black">GIMP</a>
-    </div>
-
-    <div class="w3-col s2">
-      <a href="#inkscape" class="w3-button w3-block w3-black">Inkscape</a>
-    </div>
-
-    <div class="w3-col s2">
-      <a href="#video" class="w3-button w3-block w3-black">Video</a>
-    </div>
-
-    <div class="w3-col s2">
-      <a href="#word" class="w3-button w3-block w3-black">Word</a>
-    </div>
-
-    <div class="w3-col s2">
-      <a href="#excel" class="w3-button w3-block w3-black">Excel</a>
-    </div>
-
-  </div>
+<div class="w3-col s2">
+<a href="#gimp" class="w3-button w3-block">GIMP</a>
 </div>
 
-<!-- Header -->
-<header class="bgimg w3-display-container w3-grayscale-min">
-
-<div class="w3-display-middle w3-center">
-<span class="w3-text-white" style="font-size:70px">
-Datorika<br>10. klase
-</span>
+<div class="w3-col s2">
+<a href="#inkscape" class="w3-button w3-block">Inkscape</a>
 </div>
 
+<div class="w3-col s2">
+<a href="#video" class="w3-button w3-block">Video</a>
+</div>
+
+<div class="w3-col s2">
+<a href="#word" class="w3-button w3-block">Word</a>
+</div>
+
+<div class="w3-col s2">
+<a href="#excel" class="w3-button w3-block">Excel</a>
+</div>
+
+</div>
+</div>
+
+<!-- Header text -->
+<header>
+<h1>Ko es iemācījos datorikā 10. klasē</h1>
+<p>Mani projekti un darbi</p>
 </header>
 
-<!-- Page content -->
-<div class="w3-sand w3-large">
-
 <!-- GIMP -->
-<div class="w3-container w3-padding-64" id="gimp">
-<div class="w3-content" style="max-width:800px">
+<div id="gimp" class="w3-content w3-padding-64" style="max-width:800px">
+<h2 class="w3-center section-title">GIMP projekti</h2>
 
-<h2 class="w3-center">GIMP projekti</h2>
-
-<p>
-GIMP programmā mēs mācījāmies rediģēt attēlus un veidot animācijas.
-</p>
+<p>GIMP programmā mēs mācījāmies rediģēt attēlus un veidot animācijas.</p>
 
 <img src="images/animacija gimp.gif" style="width:100%" class="w3-margin-top">
-
-</div>
 </div>
 
 <!-- Inkscape -->
-<div class="w3-container w3-padding-64" id="inkscape">
-<div class="w3-content" style="max-width:800px">
+<div id="inkscape" class="w3-content w3-padding-64" style="max-width:800px">
+<h2 class="w3-center section-title">Inkscape projekti</h2>
 
-<h2 class="w3-center">Inkscape projekti</h2>
-
-<p>
-Mēs izmantojām Word dokumentā savākto informāciju, lai izveidotu plakātu
-Inkscape programmā.
-</p>
+<p>Mēs izmantojām informāciju no Word dokumenta, lai izveidotu plakātu Inkscape programmā.</p>
 
 <img src="images/plakats.png" style="width:100%" class="w3-margin-top">
 
 <img src="images/degreez2.png" style="width:60%" class="w3-margin-top">
-
-</div>
 </div>
 
 <!-- Video -->
-<div class="w3-container w3-padding-64" id="video">
-<div class="w3-content" style="max-width:800px">
+<div id="video" class="w3-content w3-padding-64" style="max-width:800px">
+<h2 class="w3-center section-title">3D puzles un video montēšana</h2>
 
-<h2 class="w3-center">3D puzles un video montēšana</h2>
-
-<p>
-Mēs veidojām 3D puzles un pēc tam montējām video.
-</p>
-
-</div>
+<p>Mēs veidojām 3D puzles un montējām video.</p>
 </div>
 
 <!-- Word -->
-<div class="w3-container w3-padding-64" id="word">
-<div class="w3-content" style="max-width:800px">
+<div id="word" class="w3-content w3-padding-64" style="max-width:800px">
+<h2 class="w3-center section-title">Microsoft Word</h2>
 
-<h2 class="w3-center">Microsoft Word</h2>
-
-<p>
-Word programmā mēs mācījāmies veidot dokumentus,
-formatēt tekstu un pievienot attēlus.
-</p>
-
-</div>
+<p>Word programmā mēs veidojām dokumentus un formatējām tekstu.</p>
 </div>
 
 <!-- Excel -->
-<div class="w3-container w3-padding-64" id="excel">
-<div class="w3-content" style="max-width:800px">
+<div id="excel" class="w3-content w3-padding-64" style="max-width:800px">
+<h2 class="w3-center section-title">Microsoft Excel</h2>
 
-<h2 class="w3-center">Microsoft Excel</h2>
-
-<p>
-Excel programmā mēs veidojām tabulas, izmantojām formulas
-un veidojām diagrammas.
-</p>
-
-</div>
-</div>
-
+<p>Excel programmā mēs veidojām tabulas, izmantojām formulas un veidojām diagrammas.</p>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-<p>Datorika projekts - 10. klase</p>
+<footer class="w3-center w3-padding-32" style="background:#ffb3d9">
+<p>Datorika projekts • 10. klase</p>
 </footer>
 
 </body>
