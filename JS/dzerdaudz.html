@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function maksa(){
+    let dz = document.getElementsByTagName('input');
+    let sum = 0;
+
+    for(let i = 0; i < dz.length; i++) {
+        if(dz[i].type === "checkbox" && dz[i].checked) {
+            sum += Number(dz[i].value);
+        }
+    }
+
+    document.getElementById("maksa").innerHTML = "Jāmaksā " + sum.toFixed(2) + " €";
+}
+</script>
+
+<p id="maksa"></p>
+
+<form>
+  <input type="checkbox" id="kafija" value="3.60">
+  <label for="kafija">kafija</label><br>
+
+  <input type="checkbox" id="sula" value="2.50">
+  <label for="sula">sula</label><br>
+
+  <input type="checkbox" id="kakao" value="3.20">
+  <label for="kakao">kakao</label><br>
+
+  <input type="checkbox" id="udens" value="1.00">
+  <label for="udens">ūdens</label><br><br>
+
+  <input type="button" value="jāmaksā" onclick="maksa()">
+</form> 
+
+</body>
+</html>
