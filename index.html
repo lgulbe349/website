@@ -10,35 +10,38 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 <link rel="stylesheet" href="CSS/mansStils.css">
 
+<style>
+body {
+  margin-top: 50px;
+}
+</style>
+
 </head>
 
 <body>
 
 <!-- Menu -->
 <div class="w3-top">
-<div class="w3-row w3-padding pink-bar">
+  <div class="w3-bar custom-nav">
 
-<div class="w3-col s2">
-<a href="#gimp" class="w3-button w3-block">GIMP</a>
-</div>
+    <a href="#" class="w3-bar-item w3-button">Sākums</a>
 
-<div class="w3-col s2">
-<a href="#inkscape" class="w3-button w3-block">Inkscape</a>
-</div>
+    <!-- Dropdown -->
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">Attēlu apstrāde ▾</button>
+      <div class="w3-dropdown-content w3-bar-block w3-pink">
+        <a href="#gimp" class="w3-bar-item w3-button">Rastrgrafika (GIMP)</a>
+        <a href="#inkscape" class="w3-bar-item w3-button">Vektorgrafika (Inkscape)</a>
+      </div>
+    </div>
 
-<div class="w3-col s2">
-<a href="#video" class="w3-button w3-block">Video</a>
-</div>
+    <a href="#word" class="w3-bar-item w3-button">Teksta apstrāde</a>
+    <a href="#excel" class="w3-bar-item w3-button">Izklājlapas</a>
+    <a href="#video" class="w3-bar-item w3-button">Video</a>
 
-<div class="w3-col s2">
-<a href="#word" class="w3-button w3-block">Tekstapstrāde</a>
-</div>
+    <a href="otrais.html" class="w3-bar-item w3-button">Individuālā tēma</a>
 
-<div class="w3-col s2">
-<a href="#excel" class="w3-button w3-block">Excel</a>
-</div>
-
-</div>
+  </div>
 </div>
 
 <!-- Header text -->
@@ -60,12 +63,6 @@
 <!-- Inkscape -->
 <div id="inkscape" class="w3-content w3-padding-64" style="max-width:800px">
 <h2 class="w3-center section-title">Inkscape</h2>
-
-<p>Es izmantoju informāciju, no iepriekš uztaisītā Word dokumenta (par aizsardzību pret sociālo inžnieriju), lai uztaisītu plakātu Inkscape programmā.</p>
-
-<div style="text-align:center;">
-  <img src="Images/plakats.png" style="width:100%" class="w3-margin-top">
-</div>
 
 <p>Kad mēs bijām izmēģinājuši Inkscape funkcijas ar plakātu veidošanu, skolotāja mums iedeva jaunu uzdevumu, kur mūs sadalīja grupās un mums bija jāuztaisa logo citas grupas uzņēmumam. Tas arī saistījās ar mūsu nākamo datorikas tēmu: 3D puzles veidošanu.</p>
 <div style="text-align:center;">
@@ -91,21 +88,22 @@
 <div id="word" class="w3-content w3-padding-64" style="max-width:800px">
 <h2 class="w3-center section-title">Word</h2>
 
-<p>Word programmā mēs veidojām dokumentus un formatējām tekstu.</p>
+<p>Word programmā mēs formatējām dokumentus, taisījām tabulas, rakstijām formulas, likām atsauces utt. Šis man ļoti palīdzēja, jo es iemācijos daudzas jaunas funkcijas, kuras man noteikti palīdzēs nākotnē. Mēs uzrakstījām pārbaudes darbu, kur lietojām visas šīs zināšanas. </p>
 </div>
 
 <!-- Excel -->
 <div id="excel" class="w3-content w3-padding-64" style="max-width:800px">
 <h2 class="w3-center section-title">Excel</h2>
 
-<p>Excel programmā mēs veidojām tabulas, izmantojām formulas un veidojām diagrammas.</p>
-<a href="dati.xlsx">Aprēķinu Excel fails</a>
+<p>Excelī mēs iemācijāmies dažādas funkcijas un kā pielietot tās dažādās situācijās. Mums bija vairāki stundu darbi ar dažādām tēmām. Mēs taisījām grafikus, pivot tables un tabulas. Beigās mēs uzrakstijām darbu par visām šīm funkcijām. Kā mājasdarbs mums bija jāizpilda zemāk ievietotais Excel fails.</p>
+<a href="JS/aprēķini_1.xlsx">Aprēķinu Excel fails</a>
 </div>
 
 <p><a href="otrais.html">otrais.html</a></p>
 <p><a href="JS/forma.html">forma.html</a></p>
 <p><a href="JS/dzer.html">dzer.html</a></p>
 <p><a href="JS/dzerdaudz.html">dzerdaudz.html</a></p>
+
 <!-- Footer -->
 <footer class="w3-center w3-padding-32" style="background:#ffb3d9">
 <p>Laura Anna Gulbe</p>
